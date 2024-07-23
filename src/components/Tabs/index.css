@@ -1,0 +1,89 @@
+.tabs-container {
+  scrollbar-width: none; /* Firefox */
+  overflow-x: scroll;
+  display: flex;
+
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.tabs-tab {
+  cursor: pointer;
+
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 300px;
+  height: 123px;
+
+  color: #666;
+
+  background-color: #fff;
+  border: 3px solid transparent;
+  border-right: 1px solid #f3f3f3;
+  border-left: 1px solid #f3f3f3;
+
+  transition: 0.2s;
+}
+
+.tabs-tab:hover {
+  border: 3px solid #0381ff;
+}
+
+.tabs-tab-active {
+  --step: 0%;
+
+  color: #0381ff;
+  background-color: #f7fbff;
+}
+
+.tabs-tab-label {
+  user-select: none;
+  font-weight: 500;
+  line-height: 28px;
+  color: #000;
+}
+
+.tabs-tab-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+
+  border-radius: 50%;
+
+  transition: 0.4s;
+}
+
+.tabs-tab-icon-active {
+  background: conic-gradient(#0381ff var(--angle), #f7fbff 0deg 360deg);
+  animation: rotate 0.75s normal forwards ease-in-out;
+}
+
+.tabs-tab-icon-inside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  background-color: #f3f3f3;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  inherits: false;
+  initial-value: 0deg;
+  syntax: '<angle>'; /* this can be angle or percentage */
+}

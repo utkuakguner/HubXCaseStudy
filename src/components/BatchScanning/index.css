@@ -1,56 +1,66 @@
-.batchScanning_showcase1 {
+.batch-scanning-showcase1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
   width: 340px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: slideUp 1s normal forwards ease-in-out;
+
+  animation: slide-up 1s normal forwards ease-in-out;
 }
 
-.batchScanning_showcase2 {
+.batch-scanning-showcase2 {
+  position: absolute;
+  bottom: -600px;
+  left: 50%;
+  transform: translateX(-50%);
+
   width: 190px;
-  position: absolute;
-  animation: slideScale1 0.75s normal forwards ease-in-out;
-  left: 50%;
-  transform: translateX(-50%);
+
+  animation: slide-scale1 0.75s normal forwards ease-in-out;
   animation-delay: 1s;
-  bottom: -600px;
 }
 
-.batchScanning_showcase3 {
+.batch-scanning-showcase3 {
+  position: absolute;
+  bottom: -600px;
+  left: 50%;
+  transform: translateX(-50%);
+
   width: 210px;
-  position: absolute;
-  animation: slideScale2 0.75s normal forwards ease-in-out;
-  left: 50%;
-  transform: translateX(-50%);
+
+  animation: slide-scale2 0.75s normal forwards ease-in-out;
   animation-delay: 1.5s;
-  bottom: -600px;
 }
 
-.batchScanning_showcase4 {
-  width: 230px;
+.batch-scanning-showcase4 {
   position: absolute;
-  animation: slideScale3 0.75s normal forwards ease-in-out;
+  bottom: -600px;
   left: 50%;
   transform: translateX(-50%);
+
+  width: 230px;
+
+  animation: slide-scale3 0.75s normal forwards ease-in-out;
   animation-delay: 2s;
-  bottom: -600px;
 }
 
-@keyframes slideUp {
+@keyframes slide-up {
   from {
     bottom: -600px;
   }
+
   to {
-    bottom: 0px;
+    bottom: 0;
   }
 }
 
-@keyframes slideScale1 {
+@keyframes slide-scale1 {
   from {
     bottom: -400px;
     scale: 0.8;
     opacity: 0;
   }
+
   to {
     bottom: 60px;
     scale: 1;
@@ -58,12 +68,13 @@
   }
 }
 
-@keyframes slideScale2 {
+@keyframes slide-scale2 {
   from {
     bottom: -400px;
     scale: 0.8;
     opacity: 0;
   }
+
   to {
     bottom: 20px;
     scale: 1;
@@ -71,12 +82,13 @@
   }
 }
 
-@keyframes slideScale3 {
+@keyframes slide-scale3 {
   from {
     bottom: -400px;
     scale: 0.8;
     opacity: 0;
   }
+
   to {
     bottom: -20px;
     scale: 1;
@@ -84,38 +96,38 @@
   }
 }
 
-@media only screen and (max-width: 1228px) {
-  .batchScanning_showcase1 {
+@media only screen and (width <= 1228px) {
+  .batch-scanning-showcase1 {
     width: 280px;
   }
 
-  .batchScanning_showcase2 {
+  .batch-scanning-showcase2 {
     width: 150px;
   }
 
-  .batchScanning_showcase3 {
+  .batch-scanning-showcase3 {
     width: 170px;
   }
 
-  .batchScanning_showcase4 {
+  .batch-scanning-showcase4 {
     width: 190px;
   }
 }
 
-@media only screen and (min-width: 1228px) {
-  .batchScanning_showcase1 {
+@media only screen and (width >= 1228px) {
+  .batch-scanning-showcase1 {
     width: 340px;
   }
 
-  .batchScanning_showcase2 {
+  .batch-scanning-showcase2 {
     width: 190px;
   }
 
-  .batchScanning_showcase3 {
+  .batch-scanning-showcase3 {
     width: 210px;
   }
 
-  .batchScanning_showcase4 {
+  .batch-scanning-showcase4 {
     width: 230px;
   }
 }

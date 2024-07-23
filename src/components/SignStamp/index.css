@@ -1,0 +1,85 @@
+.sign-stamp-showcase1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 340px;
+
+  animation: slide-up 1s normal forwards ease-in-out;
+}
+
+.sign-stamp-showcase2 {
+  position: absolute;
+  bottom: 20px;
+  transform: translateX(-50%);
+
+  opacity: 0;
+
+  animation: opacity-in-scale 0.5s normal forwards ease-in-out;
+  animation-delay: 1s;
+}
+
+.sign-stamp-showcase3 {
+  position: absolute;
+  bottom: 120px;
+  transform: translateX(-50%);
+
+  opacity: 0;
+
+  animation: opacity-in-scale 0.5s normal forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+@keyframes slide-up {
+  from {
+    bottom: -600px;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes opacity-in-scale {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@media only screen and (width <= 1228px) {
+  .sign-stamp-showcase1 {
+    width: 280px;
+  }
+
+  .sign-stamp-showcase2 {
+    left: calc(50% - 90px);
+    width: 160px;
+  }
+
+  .sign-stamp-showcase3 {
+    left: calc(50% + 90px);
+    width: 160px;
+  }
+}
+
+@media only screen and (width >= 1228px) {
+  .sign-stamp-showcase1 {
+    width: 340px;
+  }
+
+  .sign-stamp-showcase2 {
+    left: calc(50% - 120px);
+    width: 216px;
+  }
+
+  .sign-stamp-showcase3 {
+    left: calc(50% + 120px);
+    width: 216px;
+  }
+}

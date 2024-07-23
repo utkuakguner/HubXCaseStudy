@@ -1,113 +1,128 @@
-.exportShare_showcase1 {
-  width: 340px;
+.export-share-showcase1 {
   position: absolute;
+  bottom: -600px;
   left: 50%;
   transform: translateX(-50%);
-  animation: slideUp 1s normal forwards ease-in-out;
-  bottom: -600px;
+
+  width: 340px;
+
+  animation: slide-up 1s normal forwards ease-in-out;
 }
 
-.exportShare_showcase2 {
+.export-share-showcase2 {
+  position: absolute;
+  bottom: -600px;
+
   width: 24px;
-  position: absolute;
-  animation: slideFarLeft 0.75s normal forwards ease-in-out;
+
+  animation: slide-far-left 0.75s normal forwards ease-in-out;
   animation-delay: 1s;
-  bottom: -600px;
 }
 
-.exportShare_showcase3 {
-  width: 130px;
+.export-share-showcase3 {
   position: absolute;
-  animation: slideLeft 0.75s normal forwards ease-in-out;
+  bottom: -600px;
+
+  width: 130px;
+
+  animation: slide-left 0.75s normal forwards ease-in-out;
   animation-delay: 1.25s;
-  bottom: -600px;
 }
 
-.exportShare_showcase4 {
-  width: 130px;
+.export-share-showcase4 {
   position: absolute;
-  animation: slideCenter 0.75s normal forwards ease-in-out;
+  bottom: -600px;
+
+  width: 130px;
+
+  animation: slide-center 0.75s normal forwards ease-in-out;
   animation-delay: 1.5s;
-  bottom: -600px;
 }
 
-.exportShare_showcase5 {
-  width: 130px;
+.export-share-showcase5 {
   position: absolute;
-  animation: slideRight 0.75s normal forwards ease-in-out;
-  animation-delay: 1.75s;
   bottom: -600px;
+
+  width: 130px;
+
+  animation: slide-right 0.75s normal forwards ease-in-out;
+  animation-delay: 1.75s;
 }
 
-@keyframes slideUp {
+@keyframes slide-up {
   from {
     bottom: -600px;
   }
+
   to {
     bottom: 0;
   }
 }
 
-@keyframes slideFarLeft {
+@keyframes slide-far-left {
   from {
     bottom: -600px;
     left: 50%;
     transform: translateX(-50%);
   }
+
   to {
+    bottom: 30px;
     left: calc(50% - 160px);
     transform: translateX(0);
-    bottom: 30px;
   }
 }
 
-@keyframes slideLeft {
+@keyframes slide-left {
   from {
     bottom: -600px;
     left: 50%;
     transform: translateX(-50%);
   }
+
   to {
+    bottom: 40px;
     left: calc(50% - 170px);
     transform: translateX(0);
-    bottom: 40px;
   }
 }
 
-@keyframes slideCenter {
+@keyframes slide-center {
   from {
     bottom: -600px;
     left: 50%;
     transform: translateX(-100px -50%);
   }
+
   to {
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 50px;
   }
 }
 
-@keyframes slideRight {
+@keyframes slide-right {
   from {
     bottom: -600px;
     left: 50%;
     transform: translateX(-50%);
   }
+
   to {
+    bottom: 35px;
     left: calc(50% + 60px);
     transform: translateX(0);
-    bottom: 35px;
   }
 }
 
-@media only screen and (max-width: 1228px) {
-  .exportShare_showcase1 {
+@media only screen and (width <= 1228px) {
+  .export-share-showcase1 {
     width: 280px;
   }
 }
 
-@media only screen and (min-width: 1228px) {
-  .exportShare_showcase1 {
+@media only screen and (width >= 1228px) {
+  .export-share-showcase1 {
     width: 340px;
   }
 }

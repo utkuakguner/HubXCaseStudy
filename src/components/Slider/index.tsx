@@ -1,7 +1,7 @@
+import './index.css';
+
 import React, { useMemo } from 'react';
 import { slides, strings } from '../../constants';
-
-import styles from './index.module.css';
 
 interface Props {
   activeSlide: string;
@@ -11,18 +11,16 @@ const Slider: React.FC<Props> = ({ activeSlide }) => {
   const slide = useMemo(() => slides[activeSlide], [activeSlide]);
 
   return (
-    <div className={styles.slider__container}>
-      <div className={styles.slider__wrapper}>
-        <div className={styles.slider__showCase}>{slide.showcase}</div>
+    <div className="slider-container">
+      <div className="slider-wrapper">
+        <div className="slider-showcase">{slide.showcase}</div>
       </div>
-      <div className={styles.slider__wrapper}>
-        <div className={styles.slider__content}>
-          <div className={styles.slider__header}>{slide.headerText}</div>
-          <div className={styles.slider__title}>{slide.titleText}</div>
-          <div className={styles.slider__description}>
-            {slide.descriptionText}
-          </div>
-          <button className={styles.slider__cta}>{strings.learnMore}</button>{' '}
+      <div className="slider-wrapper">
+        <div className="slider-content">
+          <div className="slider-header">{slide.headerText}</div>
+          <div className="slider-title">{slide.titleText}</div>
+          <div className="slider-description">{slide.descriptionText}</div>
+          <button className="slider-cta">{strings.learnMore}</button>{' '}
         </div>
       </div>
     </div>

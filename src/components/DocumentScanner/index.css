@@ -1,0 +1,31 @@
+.document-scanner-showcase {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 340px;
+
+  animation: slide-up 1s normal forwards ease-in-out;
+}
+
+@keyframes slide-up {
+  from {
+    bottom: -600px;
+  }
+
+  to {
+    bottom: 0;
+  }
+}
+
+@media only screen and (width <= 1228px) {
+  .document-scanner-showcase {
+    width: 280px;
+  }
+}
+
+@media only screen and (width >= 1228px) {
+  .document-scanner-showcase {
+    width: 340px;
+  }
+}

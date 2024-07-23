@@ -1,12 +1,13 @@
 * {
-  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Poppins, sans-serif;
 }
 
 body {
   margin: 0;
+  background-color: #fff;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffffff;
 }
 
 code {
