@@ -21,15 +21,17 @@ const Tabs: React.FC<Props> = ({ activeSlide, setActiveSlide }) => {
             className={classNames('tabs-tab', isActive && 'tabs-tab-active')}
             onClick={() => setActiveSlide(slide.key)}
           >
-            <div
-              className={classNames(
-                'tabs-tab-icon',
-                isActive && 'tabs-tab-icon-active',
-              )}
-            >
-              <div className="tabs-tab-icon-inside">{slide.icon}</div>
+            <div className="tabs-tab-inner">
+              <div
+                className={classNames(
+                  'tabs-tab-icon',
+                  isActive && 'tabs-tab-icon-active',
+                )}
+              >
+                <div className="tabs-tab-icon-inside">{slide.icon}</div>
+              </div>
+              <div className="tabs-tab-label">{slide.tabText}</div>
             </div>
-            <div className="tabs-tab-label">{slide.tabText}</div>
           </div>
         );
       })}

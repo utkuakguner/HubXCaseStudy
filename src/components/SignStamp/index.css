@@ -33,10 +33,12 @@
 @keyframes slide-up {
   from {
     bottom: -600px;
+    opacity: 0;
   }
 
   to {
     bottom: 0;
+    opacity: 1;
   }
 }
 

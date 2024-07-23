@@ -22,6 +22,8 @@
   flex: 1;
   flex-direction: column;
   justify-content: center;
+
+  animation: opacity-in-scale 0.5s normal forwards ease-in-out;
 }
 
 .slider-header {
@@ -61,6 +63,18 @@
 
   background-color: transparent;
   border: 2px solid #eee;
+}
+
+@keyframes opacity-in-scale {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 @media only screen and (width <= 1228px) {

@@ -9,26 +9,15 @@
 .tabs-tab {
   cursor: pointer;
 
-  display: flex;
   flex: 1;
-  align-items: center;
-  justify-content: center;
 
   min-width: 300px;
-  height: 123px;
 
   color: #666;
 
   background-color: #fff;
-  border: 3px solid transparent;
   border-right: 1px solid #f3f3f3;
   border-left: 1px solid #f3f3f3;
-
-  transition: 0.2s;
-}
-
-.tabs-tab:hover {
-  border: 3px solid #0381ff;
 }
 
 .tabs-tab-active {
@@ -36,6 +25,22 @@
 
   color: #0381ff;
   background-color: #f7fbff;
+}
+
+.tabs-tab-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 124px;
+
+  border: 3px solid transparent;
+
+  transition: 0.2s;
+}
+
+.tabs-tab-inner:hover {
+  border: 3px solid #0381ff;
 }
 
 .tabs-tab-label {

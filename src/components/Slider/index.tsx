@@ -15,7 +15,7 @@ const Slider: React.FC<Props> = ({ activeSlide }) => {
       <div className="slider-wrapper">
         <div className="slider-showcase">{slide.showcase}</div>
       </div>
-      <div className="slider-wrapper">
+      <div className="slider-wrapper" key={activeSlide}>
         <div className="slider-content">
           <div className="slider-header">{slide.headerText}</div>
           <div className="slider-title">{slide.titleText}</div>
