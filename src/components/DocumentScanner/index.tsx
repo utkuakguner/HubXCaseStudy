@@ -1,7 +1,12 @@
 import React from 'react';
+import showcase from '../../assets/documentScannerShowcase.png';
 
 const DocumentScanner: React.FC = () => {
-  return <>DocumentScanner</>;
+  return (
+    <>
+      <img src={showcase} />
+    </>
+  );
 };
 
 export default DocumentScanner;

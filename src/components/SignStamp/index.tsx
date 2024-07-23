@@ -1,7 +1,12 @@
 import React from 'react';
+import showcase from '../../assets/documentScannerShowcase.png';
 
 const SignStamp: React.FC = () => {
-  return <>SignStamp</>;
+  return (
+    <>
+      <img src={showcase} />
+    </>
+  );
 };
 
 export default SignStamp;

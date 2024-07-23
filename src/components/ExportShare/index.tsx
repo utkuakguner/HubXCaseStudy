@@ -1,7 +1,12 @@
 import React from 'react';
+import showcase from '../../assets/documentScannerShowcase.png';
 
 const ExportShare: React.FC = () => {
-  return <>ExportShare</>;
+  return (
+    <>
+      <img src={showcase} />
+    </>
+  );
 };
 
 export default ExportShare;

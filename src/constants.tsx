@@ -13,8 +13,12 @@ import ExportShare from './components/ExportShare';
 import { ReactElement } from 'react';
 import SignStamp from './components/SignStamp';
 
-export interface Strings {
+export interface StringObject {
   [key: string]: string;
+}
+
+export interface Slides {
+  [key: string]: Slide;
 }
 
 export interface Slide {
@@ -27,11 +31,7 @@ export interface Slide {
   descriptionText: string;
 }
 
-export interface Slides {
-  [key: string]: Slide;
-}
-
-export const strings: Strings = {
+export const strings: StringObject = {
   documentScannerHeader: 'DOCUMENT SCANNER',
   documentScannerTitle: 'Scan with Ease',
   documentScannerDescription:

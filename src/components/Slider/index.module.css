@@ -15,7 +15,7 @@
 
 .slider__content {
   text-align: right;
-  height: 600px;
+    padding-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
