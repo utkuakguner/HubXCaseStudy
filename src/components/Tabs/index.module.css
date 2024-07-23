@@ -28,6 +28,7 @@
 .tabs__tabActive {
   background-color: #f7fbff;
   color: #0381ff;
+  --step: 0%;
 }
 
 .tabs__tabLabel {
@@ -49,7 +50,8 @@
 }
 
 .tabs__tabIconActive {
-  background-color: #0381ff;
+  background: conic-gradient(#0381ff var(--angle), #f7fbff 0deg 360deg);
+  animation: rotate 0.75s normal forwards ease-in-out;
 }
 
 .tabs__tabIconInside {
@@ -60,4 +62,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>'; /* this can be angle or percentage */
+  initial-value: 0deg;
+  inherits: false;
 }
