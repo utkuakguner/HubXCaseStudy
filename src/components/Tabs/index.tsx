@@ -11,23 +11,30 @@ interface Props {
 const Tabs: React.FC<Props> = ({ activeSlide, setActiveSlide }) => {
   return (
     <div className={styles.tabs__container}>
-      {Object.values(slides).map((slide) => (
-        <div
-          key={slide.key}
-          className={classNames(
-            styles.tabs__tab,
-            activeSlide === slide.key && styles.tabs__tabActive,
-          )}
-          onClick={() => setActiveSlide(slide.key)}
-        >
-          <div className={styles.tabs__tabIcon}>
-          {slide.icon}
+      {Object.values(slides).map((slide) => {
+        const isActive = activeSlide === slide.key;
+
+        return (
+          <div
+            key={slide.key}
+            className={classNames(
+              styles.tabs__tab,
+              isActive && styles.tabs__tabActive,
+            )}
+            onClick={() => setActiveSlide(slide.key)}
+          >
+            <div
+              className={classNames(
+                styles.tabs__tabIcon,
+                isActive && styles.tabs__tabIconActive,
+              )}
+            >
+              {slide.icon}
+            </div>
+            <div className={styles.tabs__tabLabel}>{slide.tabText}</div>
           </div>
-          <div className={styles.tabs__tabLabel}>
-          {slide.label}
-          </div>
-          </div>
-      ))}
+        );
+      })}
     </div>
   );
 };

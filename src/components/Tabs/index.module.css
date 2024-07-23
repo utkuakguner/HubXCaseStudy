@@ -1,5 +1,8 @@
 .tabs__container {
   display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .tabs__tab {
@@ -13,6 +16,13 @@
   border-left: 1px solid #f3f3f3;
   flex: 1;
   border-right: 1px solid #f3f3f3;
+  transition: 0.2s;
+  border: 3px solid transparent;
+  color: #666666;
+}
+
+.tabs__tab:hover {
+  border: 3px solid #0381ff;
 }
 
 .tabs__tabActive {
@@ -20,19 +30,26 @@
   color: #0381ff;
 }
 
+.tabs__tabLabel {
+  line-height: 28px;
+  user-select: none;
+  color: #000000;
+  font-weight: 500;
+}
+
 .tabs__tabIcon {
   margin-right: 16px;
-  border: 1px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   border-radius: 50%;
   width: 56px;
   height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #666666;
+  position: relative;
+  transition: 0.4s;
 }
 
-.tabs__tabLabel {
-  line-height: 28px;
-  user-select: none;
+.tabs__tabIconActive {
+  border: 2px solid #0381ff;
 }

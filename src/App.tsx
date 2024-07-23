@@ -9,7 +9,7 @@ const App: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState(slides.documentScanner.key);
 
   return (
-    <main className={styles.main}>
+    <main className={styles.app__container}>
       <Slider activeSlide={activeSlide} />
       <Tabs activeSlide={activeSlide} setActiveSlide={setActiveSlide} />
     </main>
