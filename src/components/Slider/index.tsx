@@ -12,10 +12,10 @@ const Slider: React.FC<Props> = ({ activeSlide }) => {
 
   return (
     <div className={styles.slider__container}>
-      <div className={styles.slider__contentWrapper}>
-        <div className={styles.slider__content}>{slide.showcase}</div>
+      <div className={styles.slider__wrapper}>
+        <div className={styles.slider__showCase}>{slide.showcase}</div>
       </div>
-      <div className={styles.slider__contentWrapper}>
+      <div className={styles.slider__wrapper}>
         <div className={styles.slider__content}>
           <div className={styles.slider__header}>{slide.headerText}</div>
           <div className={styles.slider__title}>{slide.titleText}</div>

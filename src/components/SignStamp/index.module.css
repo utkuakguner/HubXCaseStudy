@@ -1,0 +1,77 @@
+.signStamp_showcase1 {
+  width: 340px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slideUp 1s normal forwards ease-in-out;
+}
+
+.signStamp_showcase2 {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 20px;
+  animation: opacityInScale 0.5s normal forwards ease-in-out;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.signStamp_showcase3 {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 120px;
+  animation: opacityInScale 0.5s normal forwards ease-in-out;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+@keyframes slideUp {
+  from {
+    bottom: -600px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes opacityInScale {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@media only screen and (max-width: 1228px) {
+  .signStamp_showcase1 {
+    width: 280px;
+  }
+
+  .signStamp_showcase2 {
+    width: 160px;
+    left: calc(50% - 90px);
+  }
+
+  .signStamp_showcase3 {
+    width: 160px;
+    left: calc(50% + 90px);
+  }
+}
+
+@media only screen and (min-width: 1228px) {
+  .signStamp_showcase1 {
+    width: 340px;
+  }
+
+  .signStamp_showcase2 {
+    width: 216px;
+    left: calc(50% - 120px);
+  }
+
+  .signStamp_showcase3 {
+    width: 216px;
+    left: calc(50% + 120px);
+  }
+}

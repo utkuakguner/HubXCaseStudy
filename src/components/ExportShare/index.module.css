@@ -1,0 +1,113 @@
+.exportShare_showcase1 {
+  width: 340px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slideUp 1s normal forwards ease-in-out;
+  bottom: -600px;
+}
+
+.exportShare_showcase2 {
+  width: 24px;
+  position: absolute;
+  animation: slideFarLeft 0.75s normal forwards ease-in-out;
+  animation-delay: 1s;
+  bottom: -600px;
+}
+
+.exportShare_showcase3 {
+  width: 130px;
+  position: absolute;
+  animation: slideLeft 0.75s normal forwards ease-in-out;
+  animation-delay: 1.25s;
+  bottom: -600px;
+}
+
+.exportShare_showcase4 {
+  width: 130px;
+  position: absolute;
+  animation: slideCenter 0.75s normal forwards ease-in-out;
+  animation-delay: 1.5s;
+  bottom: -600px;
+}
+
+.exportShare_showcase5 {
+  width: 130px;
+  position: absolute;
+  animation: slideRight 0.75s normal forwards ease-in-out;
+  animation-delay: 1.75s;
+  bottom: -600px;
+}
+
+@keyframes slideUp {
+  from {
+    bottom: -600px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes slideFarLeft {
+  from {
+    bottom: -600px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  to {
+    left: calc(50% - 160px);
+    transform: translateX(0);
+    bottom: 30px;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    bottom: -600px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  to {
+    left: calc(50% - 170px);
+    transform: translateX(0);
+    bottom: 40px;
+  }
+}
+
+@keyframes slideCenter {
+  from {
+    bottom: -600px;
+    left: 50%;
+    transform: translateX(-100px -50%);
+  }
+  to {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    bottom: -600px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  to {
+    left: calc(50% + 60px);
+    transform: translateX(0);
+    bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 1228px) {
+  .exportShare_showcase1 {
+    width: 280px;
+  }
+}
+
+@media only screen and (min-width: 1228px) {
+  .exportShare_showcase1 {
+    width: 340px;
+  }
+}

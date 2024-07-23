@@ -1,0 +1,28 @@
+.documentScanner_showcase {
+  width: 340px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slideUp 1s normal forwards ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    bottom: -600px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1228px) {
+  .documentScanner_showcase {
+    width: 280px;
+  }
+}
+
+@media only screen and (min-width: 1228px) {
+  .documentScanner_showcase {
+    width: 340px;
+  }
+}

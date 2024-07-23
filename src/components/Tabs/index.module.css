@@ -1,8 +1,8 @@
 .tabs__container {
   display: flex;
   overflow-x: scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .tabs__tab {
@@ -39,17 +39,25 @@
 
 .tabs__tabIcon {
   margin-right: 16px;
-  border: 2px solid #f3f3f3;
   border-radius: 50%;
   width: 56px;
   height: 56px;
+  transition: 0.4s;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  transition: 0.4s;
 }
 
 .tabs__tabIconActive {
-  border: 2px solid #0381ff;
+  background-color: #0381ff;
+}
+
+.tabs__tabIconInside {
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

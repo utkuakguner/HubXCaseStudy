@@ -29,7 +29,9 @@ const Tabs: React.FC<Props> = ({ activeSlide, setActiveSlide }) => {
                 isActive && styles.tabs__tabIconActive,
               )}
             >
-              {slide.icon}
+              <div className={classNames(styles.tabs__tabIconInside)}>
+                {slide.icon}
+              </div>
             </div>
             <div className={styles.tabs__tabLabel}>{slide.tabText}</div>
           </div>
